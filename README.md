@@ -1,8 +1,19 @@
 # docker-nginx-load-balancer
 A simple docker nginx load balancer example
 
-Checkout the full article [here](https://www.zsiegel.com/2022/01/17/Load-balancing-in-docker-with-nginx).
-
 ```sh
-docker-compose up --build --remove-orphans
+git clone https://github.com/zsiegel/docker-nginx-load-balancer.git
+cd docker-nginx-load-balancer
+
+docker-compose up --build --remove-orphans -d
+docker ps
+
+Open Browser:
+http://localhost/ : Request served by (www01 container)
+
+docker stop any container
+
+Open Browser:
+http://localhost/ : Request served by (www02 container)
+
 ```
