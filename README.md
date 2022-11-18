@@ -2,8 +2,8 @@
 A simple docker nginx load balancer example
 
 ```sh
-git clone https://github.com/zsiegel/docker-nginx-load-balancer.git
-cd docker-nginx-load-balancer
+git clone https://github.com/naikhub/devops-task.git
+cd devops-task
 
 docker-compose up --build --remove-orphans -d
 docker ps
